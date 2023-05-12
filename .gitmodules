@@ -1,0 +1,6 @@
+[submodule "3rdParty/ELFIO"]
+	path = 3rdParty/ELFIO
+	url = git@github.com:serge1/ELFIO.git
+[submodule "3rdParty/CLI11"]
+	path = 3rdParty/CLI11
+	url = git@github.com:CLIUtils/CLI11.git
