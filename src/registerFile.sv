@@ -1,6 +1,8 @@
 //RISC-V register file module
 //R0 always set to 32'b0
+
 //Verified
+
 module registerFile (
     input logic  clk,
     input logic we,

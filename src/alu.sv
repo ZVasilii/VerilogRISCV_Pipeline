@@ -1,6 +1,8 @@
 
 `include "src/alu_codes.sv"
+
 //Verified
+
 //ALU module (see alu_codes.sv for encoding)
 
 module ALU(input logic [31:0] Src1, Src2,   //Source 1 && 2 ALU

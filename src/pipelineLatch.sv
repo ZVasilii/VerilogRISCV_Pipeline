@@ -1,4 +1,5 @@
 //Verified
+
 module pipelineLatch #(parameter width = 32)
 (
     input logic clk,

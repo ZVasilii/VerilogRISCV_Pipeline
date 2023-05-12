@@ -1,5 +1,7 @@
 `include "src/constants.sv"
+
 //Verified
+
 module programCounter(
     input logic clk,
     input logic en,
@@ -7,7 +9,6 @@ module programCounter(
     input logic [31:0] PC_Execute,
     input logic [31:0] Imm,
     input logic [31:0] Reg1,
-
     output logic [31:0] PCOut
 );
 
