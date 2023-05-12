@@ -1,5 +1,6 @@
 //RISC-V register file module
-
+//R0 always set to 32'b0
+//Verified
 module registerFile (
     input logic  clk,
     input logic we,
@@ -11,16 +12,16 @@ module registerFile (
     output logic[31:0] Out2
 );
 
-logic [31:0] registerFile [31:0];
+logic [31:0] registerFile [31:0] /*verilator public*/;
 
 //Combinational reading from regFile
-assign Out1 = (ReadN1 === 4'b0) ? 4'b0 : registerFile[ReadN1];
-assign Out2 = (ReadN2 === 4'b0) ? 4'b0 : registerFile[ReadN2];
+assign Out1 = (ReadN1 === 5'b0) ? 32'b0 : registerFile[ReadN1];
+assign Out2 = (ReadN2 === 5'b0) ? 32'b0 : registerFile[ReadN2];
 
 //Sequential writing on Negedge (to solve issue with writeback)
 always_ff @(negedge clk)
 begin
-    if(we && (WriteN != 4'b0))
+    if(we && (WriteN != 5'b0))
     begin
         registerFile[WriteN] <= In;
     end
