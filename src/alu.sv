@@ -1,11 +1,11 @@
 
-`include "src/alu_codes.sv"
+`include "aluCodes.sv"
 
 //Verified
 
 //ALU module (see alu_codes.sv for encoding)
 
-module ALU(input logic [31:0] Src1, Src2,   //Source 1 && 2 ALU
+module alu(input logic [31:0] Src1, Src2,   //Source 1 && 2 ALU
            input logic [3:0] ALUop,         //Operation code
            output logic [31:0] ALUOut,      //ALUOutput
            output logic zFlag  //for Comparison

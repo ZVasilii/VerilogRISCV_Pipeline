@@ -14,7 +14,7 @@ module registerFile (
     output logic[31:0] Out2
 );
 
-logic [31:0] registerFile [31:0] /*verilator public*/;
+logic [31:0] registerFile [31:1] /*verilator public*/;
 
 //Combinational reading from regFile
 assign Out1 = (ReadN1 === 5'b0) ? 32'b0 : registerFile[ReadN1];
