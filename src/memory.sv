@@ -4,7 +4,7 @@ module memory
 #(parameter N = 12)
 (input logic clk,
 input logic we,
-input logic [31:0] Addr,
+input logic [31:0] /* verilator lint_off UNUSED */ Addr,
 input logic [2:0] Width,
 input logic [31:0] InData,
 output logic [31:0] OutData
