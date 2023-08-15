@@ -1,6 +1,6 @@
 # VerilogRISCV_Pipeline
 
-Half-working RISCV CPU on System Verilog, enjoy!
+Working RISCV CPU on System Verilog, enjoy!
 
 ### 3rdParty 
  - Git submodules (ELFIO && CLI11)
